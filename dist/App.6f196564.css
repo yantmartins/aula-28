@@ -1,0 +1,28 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    width: 50%;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eddddd;
+}
+
+.card {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #cecece;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/*# sourceMappingURL=/App.6f196564.css.map */

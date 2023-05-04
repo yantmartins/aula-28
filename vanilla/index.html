@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Contador Vanilla JS</title>
+    <style>
+    * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    width: 30%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eddddd;
+}
+
+.card {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #cecece;
+    height: 250px;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Contador</h1>
+        <span>Total: </span>
+        <span id="resultado"></span>
+        <br>
+        <button onclick="maisUm()" type="button"> +1</button>
+        <button onclick="menosUm()" type="button"> -1</button>
+    </div>
+
+<script>
+    var total = 0
+    function maisUm() {
+    const elemento = document.getElementById("resultado")
+    total += 1
+    elemento.innerText = total
+}
+function menosUm() {
+    const elemento = document.getElementById("resultado")
+    total -= 1
+    elemento.innerText = total
+}
+</script>
+    
+</body>
+</html>
